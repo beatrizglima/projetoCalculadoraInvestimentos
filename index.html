@@ -138,15 +138,25 @@
         >
           Calcular
         </button>
-        <button id="clear-form"
+        <button
+          id="clear-form"
           class="w-1/2 rounded-lg bg-[#153565] text-[#AEC2BE] cursor-pointer hover:bg-[#225BAA] hover:text-[#0A1B33]"
         >
           Limpar
         </button>
       </div>
     </aside>
-    <main>
-      <p>Resultados</p>
+    <main class="h-full">
+      <section id="charts-container">
+        <div class="h-[36dvh]">
+          <p>Resultado Final</p>
+          <canvas id="final-money-distribution"></canvas>
+        </div>
+        <div class="h-[56dvh]">
+          <p>Progressão</p>
+          <canvas id="progression"></canvas>
+        </div>
+      </section>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
